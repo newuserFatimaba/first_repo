@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creation d'un portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Creation de l'en tete-->
+    <header>
+    <nav>
+        <div class="profile">
+            <img src="profile.jpg" alt="mon profile">
+            <h1>Fatoumata Ba</h1>
+        </div>
+       <ul>
+        <li>Acceuil</li>
+        <li>A propos</li>
+        <li>Travail</li>
+        <li>CV</li>
+        <li>Contact</li>
+       </ul>
+    </nav>
+    <!--Creation de la section principale-->
+    <section class="portfolio">
+        <header>
+            <h1>Salut, je suis étudiante en développement web</h1>
+            <p>J’ai choisi d’apprendre le développement web parce que je suis passionnée par l’informatique.<br>
+                 En effet,  j’ai toujours voulu connaitre  le secret qui se cachait derrière les applications web et pour cela il me fallait apprendre les langages de programmation. C’est en cela que je me suis lancée dans le domaine informatique pour pouvoir faire du développement web.
+                De plus, le développeur web est très sollicité par les entreprises mais encore mieux il peut travailler indépendamment en se mettant a son propre compte.
+                </p>
+            </header>
+
+                <section class="insertion-image">
+                <img src="developpeur.jpg" alt="mon image">
+            </section>
+            <section class="section-projet">
+                <h1>PROJET REALISES</h1>
+                <div class="projets">
+                    <div class="projet">
+                    <h4>Les fondamentaux du web</h4>
+                    <p class="description">
+                        Dans ce projet il s'agisait de créer une présentation 
+                        de 5 slides expliquant les sujets suivants:
+                        <ul>
+                            <li>Comment fonctionne le web</li><br>
+                            <li> De quoi avez vous besoin pour etre un developpeur web</li><br>
+                            <li>Pourquoi avez vous choisi d'apprendre le developpement web</li><br>
+                        </ul>
+                    </p>
+                </div>
+                    <div class="projet">
+                    <h4>Projet sur Git et Github</h4>
+                    <p class="description">
+                        Ce projet etait compose d'une liste d'instructions qu'il fallait
+                        traiter afin de voir notre compréhension sur les commandes de Git.    
+                        Il nous etait alors  demandé  de prendre descaptures d'écran
+                        pour chaque étape de la section d'instructions, puis de transférer 
+                        ces captures d'écran vers le référentiel GitHub. 
+                    </p>
+                </div>
+                    <div class="projet">
+                    <h4>Creation d'un portfolio</h4>
+                    <p class="description">
+                        Il s'agit de la réalisation d'une page web de portfolio en essayant d'etre
+                         le plus créatif que possible.
+                    </p>
+                </div>
+                
+                </div>
+                <div class="description-video">
+                    <p>
+                        Si vous vous intéressez aussi au developpement web, vous pouvez
+                        jeter un coud d'oeil a cette video.
+                    </p>
+                </div>
+                <div class="insertion-image">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lNAHaN7hBVw?si=8SmZUT-Ef5ikZECa&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+    </section>
+    <!--Creation du pied de page-->
+    <footer>
+            <p align="center"><i>THANK YOU</i></p>
+        <form action="#">
+            <h5>N'hésitez pas à me contacter, je suis a votre disposition
+                pour plus d'informations concernant le développement web.
+            </h5>
+            <div class="separation"></div>
+            <div class="corp-form">
+                <div class="gauche">
+                    <div class="groupe">
+                        <label for="">Votre prenom</label>
+                        <input type="text">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="groupe">
+                        <label for="">Votre adresse email</label>
+                        <input type="text">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="groupe">
+                        <label for="">Votre telephone</label>
+                        <input type="text">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                </div>
+                <div class="droite">
+                    <div class="groupe" align="center">Message</div>
+                    <textarea></textarea>
+                </div>
+            </div>
+            <div class="pied-form" align = "center">
+                <button>Envoyer le message</button>
+            </div>
+        </form>
+        <div class="groupe"></div>
+        
+        
+    </footer>
+</header>
+   
+</body>
+</html>
