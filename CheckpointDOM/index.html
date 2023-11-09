@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creation d'un panier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https : //fonts.googleapis.com/css2?family= Roboto :wght@400;500 & display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <!--nav-->
+        <div class="nav-container">
+            <a href="#" class="logo"><i>FATIMA BEAUTY</i></a>
+            <!--icon-panier-->
+            <i class='bx bx-cart-add' id="icon-panier"></i>
+            <!--mon-panier-->
+            <div class="mon-panier">
+                <h2 class="panier-dachat">VOTRE PANIER</h2>
+
+                <div class="contenu-panier">
+                    <div class="produit-panier">
+                        <img src="images/produit2.jpeg" alt="" class="img-prod">
+                        <div class="detai-prod">
+                            <div class="titre-prod">parfum</div>
+                            <div class="prix-produit">10000</div>
+                            <button class="btnmoins" id="btn">-</button>
+                            <input type="text" readonly placeholder="unit price" value="1" id="btn-qte" class="qty">
+                            <button class="btnplus" id="btn">+</button>
+                        </div>
+                        <!--supprimer-panier-->
+                        <i class='bx bxs-trash-alt' id="supprimer"></i>
+                        <!--aimer les articles-->
+                        <i onclick="myFunction(this)" class="fa fa-thumbs-up" id="avis"></i>
+                    </div>
+                </div>
+                <!--total-->
+                <div class="total">
+                    <div class="total-titre">TOTAL</div>
+                    <div class="prix-total">10000</div>
+                </div>
+                <!--button-acheter-->
+                <button type="button" class="btn-acheter">ACHETER</button>
+            </div>
+        </div>
+    </header>
+
+    <!--SHOP-->
+    <section class="shop-container">
+        <h2 class="titre">NOS PRODUITS</h2>
+        <div class="nos-produits">
+            <!--produit1-->
+            <div class="produit">
+                <img src="images/produit1.jpg" alt="" class="img-prod" id="imgg">
+                <h2 class="nom-prod">collier edorat</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+             <!--produit2-->
+             <div class="produit" id="prod">
+                <img src="images/produit2.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">parfum</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+             <!--produit3-->
+             <div class="produit">
+                <img src="images/produit3.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">sac</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+             <!--produit4-->
+             <div class="produit">
+                <img src="images/produit4.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">topicrem</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit5-->
+            <div class="produit">
+                <img src="images/produit5.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">shoes</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit6-->
+            <div class="produit">
+                <img src="images/produit6.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">bracelet</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit7-->
+            <div class="produit">
+                <img src="images/produit7.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">lunettes</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit8-->
+            <div class="produit">
+                <img src="images/produit8.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">airpods</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit9-->
+            <div class="produit">
+                <img src="images/produit9.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">casques</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit10-->
+            <div class="produit">
+                <img src="images/produit10.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">collier</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit11-->
+            <div class="produit">
+                <img src="images/produit11.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">shoes</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit12-->
+            <div class="produit">
+                <img src="images/produit12.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">montre</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit13-->
+            <div class="produit">
+                <img src="images/produit13.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">montre</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit14-->
+            <div class="produit">
+                <img src="images/produit14.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">chemise</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit15-->
+            <div class="produit">
+                <img src="images/produit15.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">bague</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+             <!--produit16-->
+             <div class="produit">
+                <img src="images/produit16.jpeg" alt="" img-prod>
+                <h2 class="nom-prod">bio oil</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit17-->
+            <div class="produit">
+                <img src="images/produit17.jpg" alt="" img-prod>
+                <h2 class="nom-prod">byphasse cream</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit18-->
+            <div class="produit">
+                <img src="images/produit18.jpg" alt="" img-prod>
+                <h2 class="nom-prod">byphasse gel</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit19-->
+            <div class="produit">
+                <img src="images/produit19.jpg" alt="" img-prod>
+                <h2 class="nom-prod">byphasse lotion</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            <!--produit20-->
+            <div class="produit">
+                <img src="images/produit20.jpg" alt="" img-prod>
+                <h2 class="nom-prod">byphasse cream</h2>
+                <span class="prix">10000</span>
+                <i class='bx bx-cart-add' id="panier"></i>
+            </div>
+
+            
+        </div>
+    </section>
+    <script src="dom.js"></script>
+</body>
+</html>
